@@ -4,7 +4,7 @@
 
 The goal of this material is to show what a PR should look like, common mistakes developers make when creating PRs, and what should be done to prevent from repeating those mistakes.
 
-Take a look at the main bulletpoints in the [Engineering Onboarding Guide](https://github.com/superstruct-tech/onboarding). We're going to match our three PRs with the standards set forth in the Onboarding document to see if they match.
+Take a look at the main bullet points in the [Engineering Onboarding Guide](https://github.com/superstruct-tech/onboarding). We're going to match our three PRs with the standards set forth in the Onboarding document to see if they match.
 ___
 ### Issue #1
 
@@ -40,7 +40,7 @@ This PR has a couple of problems preventing it from being merged. Let's dive in 
 
 ####  Be sure to connect any PR you are working on to the appropriate issue. Do this via the Zenhub interface and by adding `Closes #X` where X is the issue number to the PR description in Github.
 
-This PR linked issue #2 but the problem is that it won't be closed when PR is merged. The developer didn't link it in the proper way by adding `Closes #X`:
+This PR linked issue #2 but the problem is that it won't be closed when the PR is merged. The developer didn't link it in the proper way by adding `Closes #X`:
 ![description to PR#2](https://i.imgur.com/fl7xwc1.png)
 
 We can find his teammate's comment in the Conversation section:
@@ -49,7 +49,7 @@ We can find his teammate's comment in the Conversation section:
 
 ####  Do not mix feature changes (added functionality) with fixes (restored functionality), refactors (no change in functionality), or style changes (only whitespace or other cosmetic changes).
 
-The developer deleted an empty line which could be considerd a minor change but it shouldn't be presented in this PR. Such slight changes could be distracting for reviewers and it could increase reviewing time:
+The developer deleted an empty line, which could be considered a minor change, but it shouldn't be presented in this PR. Such slight changes could be distracting for reviewers and it could increase reviewing time:
 
 ![comment#2 in PR#2](https://i.imgur.com/3Fp3OaE.png)
 
@@ -73,7 +73,7 @@ Here is his teammate's comment which points out that problem:
 
 ####  Do not mix feature changes (added functionality) with fixes (restored functionality), refactors (no change in functionality), or style changes (only whitespace or other cosmetic changes).
 
-Another problem here is that the developer, along with styling changes, changed functions's names which belongs to in separate refactoring PR.
+Another problem here is that the developer, along with styling changes, changed function names which belongs to in separate refactoring PR.
 
 There are a couple of comments left in the Conversation section informing him about this mistake:
 ![comment#2 in PR#6](https://i.imgur.com/JPkkpAH.png)
